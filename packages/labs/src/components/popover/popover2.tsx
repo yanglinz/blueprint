@@ -6,12 +6,10 @@
  */
 
 import * as classNames from "classnames";
-import { ModifierFn, Modifiers as PopperModifiers, Placement } from "popper.js";
+import PopperJS from "popper.js";
 import * as PureRender from "pure-render-decorator";
 import * as React from "react";
 import { Manager, Popper, Target } from "react-popper";
-
-export { PopperModifiers, Placement };
 
 import {
     AbstractComponent,
@@ -26,6 +24,9 @@ import {
 import { Tooltip2 } from "../tooltip/tooltip2";
 import { getArrowAngle, PopoverArrow } from "./arrow";
 import { arrowOffsetModifier, getTransformOrigin } from "./popperUtils";
+
+export type PopperModifiers = PopperJS.Modifiers;
+export type Placement = PopperJS.Placement;
 
 export interface IPopover2Props extends IOverlayableProps, IProps {
     /** HTML props for the backdrop element. Can be combined with `backdropClassName`. */
@@ -510,7 +511,7 @@ export class Popover2 extends AbstractComponent<IPopover2Props, IPopover2State> 
     }
 
     /** Popper modifier that updates React state (for style properties) based on latest data. */
-    private updatePopoverState: ModifierFn = data => {
+    private updatePopoverState: PopperJS.ModifierFn = data => {
         // pretty sure it's safe to always set these (and let sCU determine) because they're both strings
         this.setState({
             arrowRotation: getArrowAngle(data.placement),

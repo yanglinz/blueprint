@@ -5,7 +5,7 @@
  * and https://github.com/palantir/blueprint/blob/master/PATENTS
  */
 
-import * as PopperJS from "popper.js";
+import PopperJS from "popper.js";
 
 // Popper placement utils
 // ======================
@@ -51,7 +51,7 @@ export function getAlignment(placement: PopperJS.Placement) {
 // ================
 
 /** Modifier helper function to compute popper transform-origin based on arrow position */
-export function getTransformOrigin(data: PopperJS.PopperData) {
+export function getTransformOrigin(data: PopperJS.Data) {
     const position = getPosition(data.placement);
     if (data.arrowElement == null) {
         return isVerticalPosition(position)
