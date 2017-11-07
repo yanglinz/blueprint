@@ -1,0 +1,23 @@
+/* PBS override */
+
+.pt-button.pt-intent-primary,
+.pt-button.pt-intent-success,
+.pt-button.pt-intent-warning,
+.pt-button.pt-intent-danger,
+.pt-button.pt-intent-primary:hover,
+.pt-button.pt-intent-success:hover,
+.pt-button.pt-intent-warning:hover,
+.pt-button.pt-intent-danger:hover {
+  // get rid of the inner border
+  box-shadow: none;
+}
+
+.pt-button-group {
+  .pt-button.pt-intent-primary,
+  .pt-button.pt-intent-success,
+  .pt-button.pt-intent-warning,
+  .pt-button.pt-intent-danger {
+    // keep the inner border for button groups
+    box-shadow: $button-box-shadow;
+  }
+}

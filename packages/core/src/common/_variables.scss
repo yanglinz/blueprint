@@ -124,3 +124,5 @@ $pt-dark-input-box-shadow: inset border-shadow(0.3),
 $pt-dark-dialog-box-shadow: $pt-dark-elevation-shadow-4 !default;
 $pt-dark-popover-box-shadow: $pt-dark-elevation-shadow-3 !default;
 $pt-dark-tooltip-box-shadow: $pt-dark-popover-box-shadow !default;
+
+@import "./variables-override";

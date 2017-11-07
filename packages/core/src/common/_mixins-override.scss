@@ -1,0 +1,6 @@
+/* PBS override */
+
+@mixin header-typography() {
+  color: $pt-heading-color;
+  font-weight: 400;
+}
