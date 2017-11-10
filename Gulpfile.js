@@ -130,6 +130,14 @@ const projects = [
         karma: true,
         sass: "compile",
         typescript: true,
+    }, {
+        id: "style-fork",
+        cwd: "packages/style-fork/",
+        dependencies: ["core"],
+        isotest: false,
+        karma: false,
+        sass: "compile",
+        typescript: false,
     },
 ];
 
