@@ -134,10 +134,7 @@ const projects = [
         id: "style-override",
         cwd: "packages/style-override/",
         dependencies: ["core"],
-        isotest: false,
-        karma: false,
         sass: "compile",
-        typescript: false,
     },
 ];
 
