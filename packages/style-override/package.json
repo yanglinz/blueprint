@@ -5,6 +5,7 @@
   "style": "dist/blueprint.css",
   "dependencies": {
     "@blueprintjs/core": "^1.32.0",
+    "@blueprintjs/datetime": "^1.23.0",
     "normalize.css": "4.1.1"
   },
   "devDependencies": {
