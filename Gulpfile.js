@@ -130,6 +130,11 @@ const projects = [
         karma: true,
         sass: "compile",
         typescript: true,
+    }, {
+        id: "style-override",
+        cwd: "packages/style-override/",
+        dependencies: ["core"],
+        sass: "compile",
     },
 ];
 

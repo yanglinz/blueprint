@@ -1,0 +1,26 @@
+{
+  "name": "@pbs/blueprint-style-override",
+  "version": "0.1.0",
+  "description": "Core styles fork",
+  "style": "dist/blueprint.css",
+  "dependencies": {
+    "@blueprintjs/core": "^1.32.0",
+    "normalize.css": "4.1.1"
+  },
+  "devDependencies": {
+    "bourbon": "4.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pbs/blueprint.git"
+  },
+  "keywords": [
+    "blueprint",
+    "components",
+    "styles",
+    "theme",
+    "ui"
+  ],
+  "author": "Public Broadcasting Service",
+  "license": "Apache-2.0"
+}
