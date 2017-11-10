@@ -1,5 +1,5 @@
 {
-  "name": "@pbs/blueprint-style-fork",
+  "name": "@pbs/blueprint-style-override",
   "version": "0.1.0",
   "description": "Core styles fork",
   "main": "dist/index.js",

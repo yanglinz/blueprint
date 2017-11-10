@@ -131,8 +131,8 @@ const projects = [
         sass: "compile",
         typescript: true,
     }, {
-        id: "style-fork",
-        cwd: "packages/style-fork/",
+        id: "style-override",
+        cwd: "packages/style-override/",
         dependencies: ["core"],
         isotest: false,
         karma: false,

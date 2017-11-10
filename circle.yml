@@ -9,7 +9,7 @@ general:
     - packages/site-landing/dist
     - packages/table/dist
     # compiled assets for style fork package
-    - packages/style-fork/dist
+    - packages/style-override/dist
     # code coverage reports
     - packages/core/coverage
     - packages/datetime/coverage
