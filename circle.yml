@@ -8,6 +8,8 @@ general:
     - packages/site-docs/dist
     - packages/site-landing/dist
     - packages/table/dist
+    # compiled assets for style fork package
+    - packages/style-fork/dist
     # code coverage reports
     - packages/core/coverage
     - packages/datetime/coverage
@@ -60,4 +62,4 @@ deployment:
     tag: /release-.*/
     owner: palantir
     commands:
-      - ./scripts/npmPublish.sh
+      - ./scripts/npmPublishOverride.sh
