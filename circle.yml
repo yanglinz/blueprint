@@ -60,6 +60,6 @@ deployment:
       - ./scripts/preview.sh
   npm:
     tag: /release-.*/
-    owner: palantir
+    owner: yanglinz
     commands:
       - ./scripts/npmPublishOverride.sh
