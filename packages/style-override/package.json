@@ -1,6 +1,6 @@
 {
   "name": "@pbs/blueprint-style-override",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Core styles fork",
   "style": "dist/blueprint.css",
   "dependencies": {
