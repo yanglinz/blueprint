@@ -39,7 +39,11 @@ if [ $? -eq 0 ]; then
     if [ $? -eq 0 ]; then
         echo "ERROR"
         echo "New release detected, but docs were not updated."
-        exit 1
+
+        # The repo is mainly used as a small style override with its
+        # own independent releases. Until we have a formal release process
+        # we can disable the strict documentation/release check.
+        # exit 1
     else
         echo "DONE"
         PREVIEWS="$PREVIEWS | $(artifactLink '/docs/index.html' 'github pages')"
